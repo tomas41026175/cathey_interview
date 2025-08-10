@@ -1,4 +1,4 @@
-# cathey Interview Test
+# cathay Interview Test
 
 ## 📁 專案結構
 
