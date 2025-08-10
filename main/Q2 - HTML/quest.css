@@ -1,0 +1,39 @@
+.container {
+    font-size: 14px;
+}
+
+.container .header {
+    font-size: 18px;
+
+    .container .shop-list {
+        list-style: none;
+        margin-left: -15px;
+    }
+
+    .container .shop-list li.item {
+        color: green;
+    }
+
+    /* <!-- Q1. Explain why does this color not works, and how to fix make it work on 1st list --> */
+    .container .shop-list .item {
+        /* 這邊的問題在於權重不足，所以增加權重即可 */
+        color: blue;
+    }
+
+    /* fixed 不修改 html 結構的情況下*/
+    /* important ver. */
+    .container .shop-list .item {
+        color: blue !important;
+    }
+
+    /* normal ver. */
+    .container .shop-list li.item {
+        color: blue;
+    }
+
+    /* <!-- Q2. Write styling make every other line give background color to next one --> */
+    /* 使用 :nth-child(even) 來選擇偶數行 */
+    .container .shop-list li.item:nth-child(even) {
+        background-color: #f0f0f0;
+    }
+}

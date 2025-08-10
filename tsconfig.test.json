@@ -1,0 +1,19 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "types": ["node", "jest"],
+    "strict": false,
+    "noImplicitAny": false,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false
+  },
+  "include": [
+    "**/*.test.ts",
+    "**/*.spec.ts",
+    "jest.setup.js"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}

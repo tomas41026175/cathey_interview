@@ -1,0 +1,45 @@
+{
+    "name": "cathey-test",
+    "version": "1.0.0",
+    "description": "cathey interview test",
+    "main": "dist/index.js",
+    "scripts": {
+        "build": "tsc",
+        "dev": "tsc --watch",
+        "test": "jest",
+        "test:watch": "jest --watch",
+        "test:coverage": "jest --coverage",
+        "lint": "eslint main --ext .ts",
+        "lint:fix": "eslint main --ext .ts --fix",
+        "format": "prettier --write \"**/*.{ts,js,json,md}\"",
+        "clean": "rm -rf dist",
+        "start": "node dist/index.js"
+    },
+    "keywords": [
+        "typescript",
+        "frontend",
+        "interview",
+        "sorting",
+        "testing"
+    ],
+    "author": "tomaschang",
+    "license": "MIT",
+    "devDependencies": {
+        "@types/jest": "^29.5.8",
+        "@types/node": "^20.8.10",
+        "@types/react": "^19.1.9",
+        "@types/react-dom": "^19.1.7",
+        "@typescript-eslint/eslint-plugin": "^6.12.0",
+        "@typescript-eslint/parser": "^6.12.0",
+        "eslint": "^8.54.0",
+        "eslint-config-prettier": "^9.0.0",
+        "eslint-plugin-jest": "^27.4.3",
+        "jest": "^29.7.0",
+        "prettier": "^3.0.3",
+        "ts-jest": "^29.1.1",
+        "typescript": "^5.2.2"
+    },
+    "engines": {
+        "node": ">=16.0.0"
+    }
+}
